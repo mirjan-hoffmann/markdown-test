@@ -21,7 +21,7 @@ jobs:
   prepare-pandoc:
     runs-on: ubuntu-latest
     container:
-      image: registry.gitlab.com/tibhannover/oer/course-pandoc-preparation
+      image: registry.gitlab.com/tibhannover/oer/course-pandoc-preparation/master
     needs: merge-documents
     steps:
       - uses: actions/download-artifact@v3
